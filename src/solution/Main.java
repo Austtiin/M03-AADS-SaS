@@ -30,8 +30,16 @@ package solution;
 
 public class Main {
     public static void main(String[] args) {
+        //Start the program
+        System.out.println("Starting....");
 
-
-
+        //Run menu in try catch block in case of errors
+        try {
+            menu menu = new menu();
+            numRandom numRandom = new numRandom();
+            menu.run();
+        } catch (Exception e) {
+            System.out.println("An error occurred: " + e.getMessage());
+        }
     }
 }
