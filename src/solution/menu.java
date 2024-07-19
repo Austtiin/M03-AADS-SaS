@@ -40,5 +40,9 @@ public class menu {
         System.out.println("\nYou entered: " + input);
         System.out.println("Generating " + input + " random numbers...\n");
         numRandom.generate(Integer.parseInt(input));
+
+        //Sort the random numbers using selection sort
+        System.out.println("\nSorting random numbers using SELECTION SORT...");
+        int[] selectionSort = sortSelection.selectionSort(numRandom.randomArray);
     }
 }
