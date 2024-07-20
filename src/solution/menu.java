@@ -104,7 +104,19 @@ public class menu {
         System.out.println("Time to search for the number 500: " + durationSearch / 1000000 + "ms");
 
 
-
+//BINARY SEARCH
         //BINARY SEARCH
+        //Search for the number 500 using binary search on array 2
+        System.out.println("\nSearching for the number 500 using BINARY SEARCH...");
+        //Start timer to see how long it takes to search for the number 500
+        long startTimeSearch2 = System.nanoTime();
+        searchBinary.binarySearch(numRandom.randomArray2);
+        long endTimeSearch2 = System.nanoTime();
+        System.out.println("Binary search complete\n");
+        long durationSearch2 = (endTimeSearch2 - startTimeSearch2);
+        //print in ms
+        System.out.println("Time to search for the number 500: " + durationSearch2 / 1000000 + "ms");
+
+        scanner.close();
     }
 }
