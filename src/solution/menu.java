@@ -90,5 +90,21 @@ public class menu {
         System.out.println("Time to sort random numbers: " + durationSort2 / 1000000 + "ms");
 
 
+//LINEAR SEARCH
+        //LINEAR SEARCH
+        //Search for the number 500 using linear search
+        System.out.println("\nSearching for the number 500 using LINEAR SEARCH...");
+        //Start timer to see how long it takes to search for the number 500
+        long startTimeSearch = System.nanoTime();
+        searchLinear.linearSearch(numRandom.randomArray1);
+        long endTimeSearch = System.nanoTime();
+        System.out.println("Linear search complete\n");
+        long durationSearch = (endTimeSearch - startTimeSearch);
+        //print in ms
+        System.out.println("Time to search for the number 500: " + durationSearch / 1000000 + "ms");
+
+
+
+        //BINARY SEARCH
     }
 }
