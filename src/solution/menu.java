@@ -43,6 +43,5 @@ public class menu {
 
         //Sort the random numbers using selection sort
         System.out.println("\nSorting random numbers using SELECTION SORT...");
-        int[] selectionSort = sortSelection.selectionSort(numRandom.randomArray);
     }
 }

@@ -30,6 +30,7 @@ public class numRandom {
             int random = (int) (Math.random() * 1000 + 1);
             //create and store array of random numbers at the same time.
             randomArray[j] = random;
+            System.out.println(random);
 
         }
     }

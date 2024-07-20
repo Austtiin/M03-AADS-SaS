@@ -36,7 +36,7 @@ public class Main {
         //Run menu in try catch block in case of errors
         try {
             menu menu = new menu();
-            numRandom numRandom = new numRandom();
+
             menu.run();
         } catch (Exception e) {
             System.out.println("An error occurred: " + e.getMessage());
