@@ -17,17 +17,19 @@ package solution;
 public final class numRandom {
     //inlcude array to store random numbers
     //public static int[] randomArray starts here to be used in other classes
-    public static int[] randomArray;
-
+    public static int[] randomArray1;
+    public static int[] randomArray2;
 
     public static void generate(int i) {
         // Initialize the array with size i
-        randomArray = new int[i];
+        randomArray1 = new int[i];
+        randomArray2 = new int[i];
 
         for (int j = 0; j < i; j++) {
             try {
                 int random = (int) (Math.random() * 1000 + 1);
-                randomArray[j] = random;
+                randomArray1[j] = random;
+                randomArray2[j] = random;
                 System.out.println(random);
             } catch (Exception e) {
                 System.out.println("Error at random array " + e.getMessage());

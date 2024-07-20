@@ -21,8 +21,11 @@ Also implement two search algorithms in your program, to search for the actual n
 
 Run tests on the two algorithms and report (tabulated and commentary) on your findings on the performance of the search algorithms.
 
-
-
+We selected the following algorithms to sort and search the random numbers:
+Selection Sort
+Insertion Sort
+Linear Search
+Binary Search
  */
 
 
