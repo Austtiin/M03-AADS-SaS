@@ -35,6 +35,4 @@ public class sortSelection {
         //return the sorted array
         return randomArray;
     }
-
-
 }

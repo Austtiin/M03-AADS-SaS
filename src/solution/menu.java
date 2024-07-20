@@ -14,6 +14,8 @@ import java.util.Scanner;
 
 public class menu {
     public void run() {
+
+        //MENU
         Scanner scanner = new Scanner(System.in);
         //This will run the menu and get the user input
         System.out.println("Welcome to the Sort and Search Algorithms program");
@@ -39,9 +41,35 @@ public class menu {
         //Show input and generate random numbers
         System.out.println("\nYou entered: " + input);
         System.out.println("Generating " + input + " random numbers...\n");
-        numRandom.generate(Integer.parseInt(input));
 
+
+        //GENERATE RANDOM NUMBERS
+        //Start timer to see how long it takes to generate random numbers
+        long startTime = System.nanoTime();
+        numRandom.generate(Integer.parseInt(input));
+        long endTime = System.nanoTime();
+        long duration = (endTime - startTime);
+        //print in ms
+        System.out.println("Time to generate random numbers: " + duration / 1000000 + "ms");
+
+
+        //SELECTION SORT
         //Sort the random numbers using selection sort
         System.out.println("\nSorting random numbers using SELECTION SORT...");
+        //Start timer to see how long it takes to sort the random numbers
+        long startTimeSort = System.nanoTime();
+        int[] selectionSort = sortSelection.selectionSort(numRandom.randomArray);
+        long endTimeSort = System.nanoTime();
+        System.out.println("Selection sort complete\n");
+        long durationSort = (endTimeSort - startTimeSort);
+        //print in ms
+        System.out.println("Time to sort random numbers: " + durationSort / 1000000 + "ms");
+
+        //Print the sorted array using selection sort algorithm
+        System.out.println("Sorted array using SELECTION SORT:");
+        for (int i : selectionSort) {
+            System.out.println(i);
+        }
+
     }
 }

@@ -14,24 +14,24 @@
 
 package solution;
 
-public class numRandom {
+public final class numRandom {
     //inlcude array to store random numbers
-    //start arry here to keep it global
+    //public static int[] randomArray starts here to be used in other classes
     public static int[] randomArray;
 
 
     public static void generate(int i) {
+        // Initialize the array with size i
+        randomArray = new int[i];
 
-        //This will generate a random number based on user input
-        //we loop through to generate the random numbers 'i' ammount of times
         for (int j = 0; j < i; j++) {
-            //generate random numbers, times 1000 to get a number between 1 and 1000
-            //plus 1 to include 1000
-            int random = (int) (Math.random() * 1000 + 1);
-            //create and store array of random numbers at the same time.
-            randomArray[j] = random;
-            System.out.println(random);
-
+            try {
+                int random = (int) (Math.random() * 1000 + 1);
+                randomArray[j] = random;
+                System.out.println(random);
+            } catch (Exception e) {
+                System.out.println("Error at random array " + e.getMessage());
+            }
         }
     }
 }
