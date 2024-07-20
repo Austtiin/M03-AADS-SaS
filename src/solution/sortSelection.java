@@ -19,7 +19,7 @@ public class sortSelection {
         for (int i = 0; i < randomArray.length - 1; i++) {
             //set the minimum value to the current index
             int min = i;
-            //loop through the array again
+            //loop through the array again to find the minimum value
             for (int j = i + 1; j < randomArray.length; j++) {
                 //if the current index is less than the minimum value
                 if (randomArray[j] < randomArray[min]) {
@@ -29,7 +29,9 @@ public class sortSelection {
             }
             //swap the minimum value with the current index
             int temp = randomArray[min];
+            //set the minimum value to the current index
             randomArray[min] = randomArray[i];
+            //set the current index to the minimum value
             randomArray[i] = temp;
         }
         //return the sorted array

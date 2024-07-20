@@ -14,7 +14,7 @@ public class searchLinear {
     //grab the random numbers from numRandom array to search in linear search function
     public static void linearSearch(int[] randomArray) {
         //This will search for the number 500 using the linear search algorithm
-        //loop through the array
+        //loop through the array to find the number 500
         for (int i = 0; i < randomArray.length; i++) {
             //if the current index is equal to 500
             if (randomArray[i] == 500) {

@@ -13,7 +13,7 @@ package solution;
 public class sortInsertion {
     //grab the random numbers from numRandom array to sort in insertion sort function
     public static int[] insertionSort(int[] randomArray) {
-        //This will sort the random numbers using the insertion sort algorithm
+        //This will sort the random numbers using the insertion sort algorithm and return the sorted array
         //loop through the array
         for (int i = 1; i < randomArray.length; i++) {
             //set the current value to the current index
@@ -26,7 +26,7 @@ public class sortInsertion {
                 randomArray[j + 1] = randomArray[j];
                 j--;
             }
-            //move the current value to the previous index
+            //move the current value to the previous index + 1
             randomArray[j + 1] = current;
         }
         //print the sorted array
